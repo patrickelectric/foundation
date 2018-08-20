@@ -180,6 +180,10 @@ class github_checker:
                 for _ in issues:
                     total = total + 1
                 for i, issue in enumerate(issues):
+                    # GitHub's REST API v3 considers every pull request an issue, but not every issue is a pull request.
+                    # You can identify pull requests by the pull_request key.
+                    if issue.pull_request:
+                        continue
                     self.printcl('[ISSUE][%s][%d/%d]\t%s' % (self._state_to_utf[issue_state], i + 1, total, repo.name))
                     # It's not me
                     check_for_name_in = [issue.user.login]
