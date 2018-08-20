@@ -5,7 +5,7 @@ import time
 from datetime import datetime
 from github import Github
 
-class github_checker:
+class GithubChecker:
     def __init__(self, username: str, password: str):
         self._username = username
         self._github = Github(username, password)

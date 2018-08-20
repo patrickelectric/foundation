@@ -2,7 +2,7 @@ import argparse
 import sys
 
 from getpass import getpass
-from github_checker import github_checker
+from githubChecker import GithubChecker
 
 parser = argparse.ArgumentParser(
     description="Check for PRs and issue in repositories or organizations."
@@ -40,7 +40,7 @@ print("This script uses github api, please provide username and password.")
 username = input("Nickname: ")
 password = getpass('Password: ')
 try:
-    checker = github_checker(username, password)
+    checker = GithubChecker(username, password)
 except Exception as e:
     print('Something wrong with user and password.')
     print(e)
