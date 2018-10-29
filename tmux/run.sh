@@ -30,4 +30,4 @@ echob "You can run '$TMUX_FOLDER/run.sh' to update theme and scripts."
 runstep "curl -s wttr.in/$(curl -s http://ip-api.com/csv\?fields\=city)\?format\="%c%20%t%20%w" > /tmp/tmux.wttr" "Create weather file" "Failed to create weather file"
 
 echob "Add the following line in cron ('crontab -e')"
-echo '*/5 * * * * curl -s wttr.in/$(curl -s http://ip-api.com/csv\?fields\=city)\?format\="%c%20%t%20%w" > /tmp/tmux.wttr'
+echo '*/5 * * * * curl -s wttr.in/$(curl -s http://ip-api.com/csv\?fields\=city)\?format=\%c\%20\%t\%20\%w > /tmp/tmux.wttr'
