@@ -9,7 +9,7 @@
 
 Run:
 ```sh
-source <(curl -s https://raw.githubusercontent.com/patrickelectric/foundation/master/tmux/run.sh)
+bash <(curl -s https://raw.githubusercontent.com/patrickelectric/foundation/master/tmux/run.sh)
 ```
 
 It needs `python-psutil` and cron.
