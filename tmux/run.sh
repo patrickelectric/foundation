@@ -20,7 +20,7 @@ fi
 
 source "$TMUX_FOLDER/bash_utils.sh"
 
-checktool "crontab -V" "Crontab exist." "Please, install crontab. (cronie)"
+checktool "command -v crontab" "Crontab exist." "Please, install crontab. (cronie)"
 if [ -f "$HOME/tmux.conf" ]; then
     runstep "cp $HOME/tmux.conf $HOME/tmux.conf.backup" "Tmux configuration file backup created" "Failed to create a backup of tmux configuration file"
 fi
