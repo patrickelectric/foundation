@@ -12,4 +12,4 @@ Run:
 bash <(curl -s https://raw.githubusercontent.com/patrickelectric/foundation/master/tmux/run.sh)
 ```
 
-It needs `python-psutil` and cron.
+It needs `python-psutil`, `git`, `wget` and `cronie`.
