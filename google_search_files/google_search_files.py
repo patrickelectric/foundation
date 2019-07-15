@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import argparse
 
 # from https://github.com/abenassi/Google-Search-API
@@ -24,8 +26,8 @@ def find(text, formats):
     text += filetype
     results = search(text)
 
-    for result in results[:7]:
-        msg = msg + '{:<70s}{:>100s}\n------------------------------\n'.format(result.name[:70], result.link)
+    for result in results:
+        msg = msg + '{:<70s}\n\t> {}\n'.format(result.name[:70].split('...')[0], result.link)
     return msg
 
 if __name__ == '__main__':
