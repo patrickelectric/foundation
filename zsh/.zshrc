@@ -111,8 +111,24 @@ export OH_MY_NEOVIM_EXTENSIONS="default clang code_style git go gpg icons idea j
 
 source ~/.oh-my-neovim/tools/functions.sh
 
-PATH="~/.gem/ruby/2.3.0/bin:$PATH"
-
-PATH="~/.node_modules_global/bin:$PATH"
-
 export HISTTIMEFORMAT="%d/%m/%y %T "
+
+alias ls='ls --color=auto'
+PS1='[\u@\h \W]\$ '
+
+EDITOR=nano
+VISUAL=nano
+#export PATH=/opt/gcc-arm-none-eabi-6-2017-q2-update/bin:$PATH
+#export PATH=~/git/blue/ardupilot/Tools/autotest:$PATH
+#export PATH=~/git/blue/ardupilot/ardupilot/Tools/autotest:$PATH
+export PATH=$PATH:~/.local/bin
+export PATH=$PATH:~/.cargo/bin
+#export PATH=$PATH:~/git/git-redate
+export PATH=$PATH:~/.gem/ruby/2.7.0/bin
+export PATH=$PATH:~/.node_modules_global/bin
+
+alias ls=exa
+alias pc=procs
+alias cat=bat
+alias find=fd
+
