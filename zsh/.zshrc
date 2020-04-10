@@ -105,12 +105,12 @@ source $ZSH/oh-my-zsh.sh
 PATH="/Users/patrick/perl5/bin${PATH:+:${PATH}}"; export PATH;
 export PATH="/usr/local/opt/bison/bin:$PATH"
 
-export OH_MY_NEOVIM=/Users/patrick/.oh-my-neovim
+export OH_MY_NEOVIM=$HOME/.oh-my-neovim
 
 export OH_MY_NEOVIM_EXTENSIONS="default clang code_style git go gpg icons idea javascript json mouse neomake nodejs python search session smooth_scroll spell sublime test themes tmux true_color typescript undo vim web xml yaml"
 
-source /Users/patrick/.oh-my-neovim/tools/functions.sh
+source $HOME/.oh-my-neovim/tools/functions.sh
 
-PATH="/Users/patrick/.gem/ruby/2.3.0/bin:$PATH"
+PATH="$HOME/.gem/ruby/2.3.0/bin:$PATH"
 
-PATH="/Users/patrick/.node_modules_global/bin:$PATH"
+PATH="$HOME/.node_modules_global/bin:$PATH"
