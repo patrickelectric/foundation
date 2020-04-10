@@ -114,3 +114,5 @@ source ~/.oh-my-neovim/tools/functions.sh
 PATH="~/.gem/ruby/2.3.0/bin:$PATH"
 
 PATH="~/.node_modules_global/bin:$PATH"
+
+export HISTTIMEFORMAT="%d/%m/%y %T "
