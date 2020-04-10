@@ -4,7 +4,7 @@ source ~/.bash_profile
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/patrick/.oh-my-zsh"
+export ZSH="~/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -105,12 +105,12 @@ source $ZSH/oh-my-zsh.sh
 PATH="/Users/patrick/perl5/bin${PATH:+:${PATH}}"; export PATH;
 export PATH="/usr/local/opt/bison/bin:$PATH"
 
-export OH_MY_NEOVIM=$HOME/.oh-my-neovim
+export OH_MY_NEOVIM=~/.oh-my-neovim
 
 export OH_MY_NEOVIM_EXTENSIONS="default clang code_style git go gpg icons idea javascript json mouse neomake nodejs python search session smooth_scroll spell sublime test themes tmux true_color typescript undo vim web xml yaml"
 
-source $HOME/.oh-my-neovim/tools/functions.sh
+source ~/.oh-my-neovim/tools/functions.sh
 
-PATH="$HOME/.gem/ruby/2.3.0/bin:$PATH"
+PATH="~/.gem/ruby/2.3.0/bin:$PATH"
 
-PATH="$HOME/.node_modules_global/bin:$PATH"
+PATH="~/.node_modules_global/bin:$PATH"
