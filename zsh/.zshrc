@@ -69,6 +69,7 @@ plugins=(
   fzf
   web-search
   zsh_reload
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
