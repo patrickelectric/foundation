@@ -67,6 +67,7 @@ plugins=(
   git
   colored-man-pages
   fzf
+  man
   web-search
   zsh_reload
   zsh-autosuggestions
